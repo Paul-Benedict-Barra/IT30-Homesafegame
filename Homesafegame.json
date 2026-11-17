@@ -3148,6 +3148,24 @@
                 "=",
                 "\"B. \" + KitchenHazards.Choice2"
               ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "QuizPrompt",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "QuizTitle",
+                ""
+              ]
             }
           ]
         },
@@ -3333,6 +3351,22 @@
                     "NextUI",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "QuizTitle"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "QuizPrompt"
+                  ]
                 }
               ]
             },
@@ -3407,6 +3441,22 @@
                   "parameters": [
                     "NextUI",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "QuizTitle"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "QuizPrompt"
                   ]
                 }
               ]
