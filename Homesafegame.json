@@ -1,7 +1,7 @@
 {
   "firstLayout": "MainMenu",
   "gdVersion": {
-    "build": 283,
+    "build": 287,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -414,6 +414,7 @@
       "mangledName": "MainMenu",
       "name": "MainMenu",
       "r": 247,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -430,7 +431,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6538585116919247,
+        "zoomFactor": 0.6986986381632975,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -968,6 +969,7 @@
       "mangledName": "RoomSelection",
       "name": "RoomSelection",
       "r": 247,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -1072,6 +1074,7 @@
       "mangledName": "KitchenRoom",
       "name": "KitchenRoom",
       "r": 247,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -1088,7 +1091,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.787629010167376,
+        "zoomFactor": 0.7370816317994034,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1145,7 +1148,14 @@
         },
         {
           "name": "ResultUI",
-          "objects": []
+          "objects": [
+            {
+              "name": "FeedbackTitle"
+            },
+            {
+              "name": "FeedbackText"
+            }
+          ]
         }
       ],
       "variables": [
@@ -1331,9 +1341,25 @@
           "name": "InfoText",
           "persistentUuid": "3f3c1562-52ca-412c-a2f7-008f9d1e0b82",
           "width": 0,
-          "x": 142,
-          "y": 761,
-          "zOrder": 9,
+          "x": 170,
+          "y": 787,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QuizPanel",
+          "persistentUuid": "57d9c119-941b-43d3-a1f3-f80cf05a5d31",
+          "width": 0,
+          "x": 352,
+          "y": 212,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1342,15 +1368,48 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 147,
+          "height": 30,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QuizTitle",
+          "persistentUuid": "90b17550-8b08-4923-b648-82009bebe080",
+          "width": 119,
+          "x": 560,
+          "y": 220,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "QuizPrompt",
+          "persistentUuid": "7097181f-230a-41ff-84ca-0fe2b3b853ed",
+          "width": 0,
+          "x": 505,
+          "y": 262,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 87,
           "keepRatio": true,
           "layer": "",
           "name": "ChoiceButton1",
-          "persistentUuid": "b82a08d1-4abd-4164-a781-08313211b237",
-          "width": 299,
-          "x": 137,
-          "y": 520,
-          "zOrder": 10,
+          "persistentUuid": "be82429d-7721-4e46-a3f6-cf3a8103fc5a",
+          "width": 169,
+          "x": 531,
+          "y": 275,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
@@ -1366,15 +1425,15 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 147,
+          "height": 87,
           "keepRatio": true,
           "layer": "",
           "name": "ChoiceButton1",
-          "persistentUuid": "ddee5830-7f36-48bc-91e7-15f5d1bb3c8c",
-          "width": 299,
-          "x": 777,
-          "y": 512,
-          "zOrder": 10,
+          "persistentUuid": "526ba9ec-a71e-4528-bdce-037f81dda068",
+          "width": 169,
+          "x": 530,
+          "y": 365,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
@@ -1385,6 +1444,70 @@
               "value": 2
             }
           ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ChoiceText1",
+          "persistentUuid": "3d8cd036-65c5-473a-8de6-81b9d544d768",
+          "width": 0,
+          "x": 600,
+          "y": 330,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ChoiceText2",
+          "persistentUuid": "afb418d7-cc5b-45ec-894a-fb8daf1db49b",
+          "width": 0,
+          "x": 600,
+          "y": 420,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FeedbackTitle",
+          "persistentUuid": "fec52498-6b90-41ec-a874-40fa8acadd53",
+          "width": 0,
+          "x": 550,
+          "y": 220,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FeedbackText",
+          "persistentUuid": "16741c6c-b240-45b9-9127-db829b1aa79e",
+          "width": 0,
+          "x": 590,
+          "y": 256,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1958,7 +2081,7 @@
           },
           "content": {
             "bold": false,
-            "isOutlineEnabled": false,
+            "isOutlineEnabled": true,
             "isShadowEnabled": false,
             "italic": false,
             "outlineColor": "255;255;255",
@@ -2052,10 +2175,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Text",
+          "string": "Quiz Time!",
           "font": "assets/CaveatBrush-Regular2.ttf",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -2075,11 +2198,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Text",
+            "text": "Quiz Time!",
             "font": "assets/CaveatBrush-Regular2.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
           }
@@ -2211,7 +2334,7 @@
           "behaviors": [],
           "string": "Text",
           "font": "assets/CaveatBrush-Regular2.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 0,
@@ -2234,8 +2357,8 @@
             "underlined": false,
             "text": "Text",
             "font": "assets/CaveatBrush-Regular2.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 20,
             "lineHeight": 0,
             "color": "0;0;0"
@@ -2255,7 +2378,7 @@
           "behaviors": [],
           "string": "Text",
           "font": "assets/CaveatBrush-Regular2.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 0,
@@ -2278,8 +2401,8 @@
             "underlined": false,
             "text": "Text",
             "font": "assets/CaveatBrush-Regular2.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 20,
             "lineHeight": 0,
             "color": "0;0;0"
@@ -2398,7 +2521,7 @@
           "string": "Great Choice!",
           "font": "assets/CaveatBrush-Regular2.ttf",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -2422,7 +2545,7 @@
             "font": "assets/CaveatBrush-Regular2.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
           }
@@ -2442,7 +2565,7 @@
           "string": "Text",
           "font": "assets/CaveatBrush-Regular2.ttf",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -2466,7 +2589,7 @@
             "font": "assets/CaveatBrush-Regular2.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
           }
@@ -2668,17 +2791,6 @@
           "conditions": [
             {
               "type": {
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "k_puddle",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "MouseButtonFromTextReleased"
               },
               "parameters": [
@@ -2701,16 +2813,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "HazardsFound",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
@@ -2725,17 +2827,6 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "k_iron",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "MouseButtonFromTextReleased"
@@ -2760,16 +2851,6 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "HazardsFound",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
@@ -2780,49 +2861,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "CounterText",
-                "Text",
-                "=",
-                "\"Hazards found: \" + ToString(Variable(FoundCount)) + \" of \" + ToString(Variable(TotalHazards))\n"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "KitchenHazards",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2917,6 +2955,17 @@
                 "",
                 "\"ClickDelay\""
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "CounterText",
+                "Text",
+                "=",
+                "\"Hazards found: \" + ToString(FoundCount) + \" of \" + ToString(TotalHazards)"
+              ]
             }
           ]
         },
@@ -2995,7 +3044,7 @@
                 "QuizTitle",
                 "Text",
                 "=",
-                "KitchenHazards.VariableString(Name)"
+                "\"Quiz Time!\""
               ]
             },
             {
@@ -3045,6 +3094,59 @@
               "parameters": [
                 "",
                 "\"ClickDelay\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "ActiveId",
+                "=",
+                "KitchenHazards.HazardId"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ActiveCorrect",
+                "=",
+                "KitchenHazards.Correct"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizTitle",
+                "Text",
+                "=",
+                "\"Quiz Time!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceText1",
+                "Text",
+                "=",
+                "\"A. \" + KitchenHazards.Choice1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceText2",
+                "Text",
+                "=",
+                "\"B. \" + KitchenHazards.Choice2"
               ]
             }
           ]
@@ -3103,6 +3205,292 @@
                 "PickedChoice",
                 "=",
                 "ChoiceButton1.Variable(Pick)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ClickDelay\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "PickedChoice",
+                    "=",
+                    "ActiveCorrect"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KitchenHazards",
+                    "HazardId",
+                    "=",
+                    "ActiveId"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Mode",
+                    "=",
+                    "\"result\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "KitchenHazards",
+                    "Found",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "FoundCount",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CounterText",
+                    "Text",
+                    "=",
+                    "\"Hazards found: \" + ToString(FoundCount) + \" of \" + ToString(TotalHazards)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FeedbackTitle",
+                    "Text",
+                    "=",
+                    "\"Correct! Safe Choice!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FeedbackText",
+                    "Text",
+                    "=",
+                    "ActiveExplain"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "ChoiceUI"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "ResultUI",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "NextUI",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "PickedChoice",
+                    "!=",
+                    "ActiveCorrect"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Mode",
+                    "=",
+                    "\"result\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FeedbackTitle",
+                    "Text",
+                    "=",
+                    "\"Not quite! Unsafe Choice.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FeedbackText",
+                    "Text",
+                    "=",
+                    "\"That action could still cause an accident. Click Next and inspect the hazard again!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "ChoiceUI"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "ResultUI",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "NextUI",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "NextUI",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Mode",
+                "=",
+                "\"result\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"ClickDelay\"",
+                ">",
+                "0.3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "QuizFrame"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "ResultUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "NextUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Mode",
+                "=",
+                "\"explore\""
               ]
             },
             {
@@ -3221,6 +3609,7 @@
       "mangledName": "LivingRoom",
       "name": "LivingRoom",
       "r": 247,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -3380,6 +3769,7 @@
       "mangledName": "SummaryScene",
       "name": "SummaryScene",
       "r": 247,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -3468,6 +3858,7 @@
       "mangledName": "TitleScene",
       "name": "TitleScene",
       "r": 255,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -3873,6 +4264,7 @@
       "mangledName": "GameScene",
       "name": "GameScene",
       "r": 255,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -5648,6 +6040,7 @@
       "mangledName": "EndScene",
       "name": "EndScene",
       "r": 255,
+      "renderer3DWorldScale": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
@@ -5747,7 +6140,42 @@
       "behaviorsSharedData": []
     }
   ],
+  "layoutsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "itemName": "MainMenu"
+      },
+      {
+        "itemName": "RoomSelection"
+      },
+      {
+        "itemName": "KitchenRoom"
+      },
+      {
+        "itemName": "LivingRoom"
+      },
+      {
+        "itemName": "SummaryScene"
+      },
+      {
+        "itemName": "TitleScene"
+      },
+      {
+        "itemName": "GameScene"
+      },
+      {
+        "itemName": "EndScene"
+      }
+    ]
+  },
   "externalEvents": [],
+  "externalEventsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "testsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "eventsFunctionsExtensions": [
     {
       "author": "",
@@ -37081,5 +37509,8 @@
       "eventsBasedObjects": []
     }
   ],
-  "externalLayouts": []
+  "externalLayouts": [],
+  "externalLayoutsFolderStructure": {
+    "folderName": "__ROOT"
+  }
 }
