@@ -373,6 +373,58 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
           "name": "CaveatBrush-Regular.ttf"
         }
+      },
+      {
+        "file": "assets/Blue Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1ffd07cb739df2a909155dd3057f6def46b833ced6ef1a09527b6ea59e88e464_Blue Button_Hovered.png",
+          "name": "Blue Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
+          "name": "Blue Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Blue Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
+          "name": "Blue Button_Pressed.png"
+        }
+      },
+      {
+        "file": "Gemini_Generated_Image_v5a74vv5a74vv5a7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gemini_Generated_Image_v5a74vv5a74vv5a7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Code_Generated_Image.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Code_Generated_Image.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -518,6 +570,23 @@
           "x": 155,
           "y": 670,
           "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 43,
+          "keepRatio": true,
+          "layer": "",
+          "name": "StartText",
+          "persistentUuid": "85917646-4fb7-4ea0-ba5e-7b27eee03ace",
+          "width": 151,
+          "x": 398,
+          "y": 609,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -798,6 +867,50 @@
             "HoveredFadeOutDuration": 0.2,
             "LabelText": "Button"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "StartText",
+          "persistentUuid": "6a2b4d3b-e64d-4820-9697-e7574dcd3ad7",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "START",
+          "font": "assets/CaveatBrush-Regular2.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 226,
+            "g": 144,
+            "r": 74
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "255;255;255",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "START",
+            "font": "assets/CaveatBrush-Regular2.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "74;144;226"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -808,6 +921,9 @@
           },
           {
             "objectName": "Homesafe"
+          },
+          {
+            "objectName": "StartText"
           },
           {
             "objectName": "TitleText"
@@ -1091,7 +1207,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994034,
+        "zoomFactor": 0.8141881203709918,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1135,16 +1251,23 @@
               "name": "ChoiceText1"
             },
             {
-              "name": "ChoiceButton1"
+              "name": "ChoiceText2"
             },
             {
-              "name": "ChoiceText2"
+              "name": "ChoiceButton1"
             }
           ]
         },
         {
           "name": "NextUI",
-          "objects": []
+          "objects": [
+            {
+              "name": "ContinueButton"
+            },
+            {
+              "name": "ContinueText"
+            }
+          ]
         },
         {
           "name": "ResultUI",
@@ -1154,6 +1277,23 @@
             },
             {
               "name": "FeedbackText"
+            }
+          ]
+        },
+        {
+          "name": "WinUI",
+          "objects": [
+            {
+              "name": "WinPanel"
+            },
+            {
+              "name": "WinText"
+            },
+            {
+              "name": "RoomSelectButton"
+            },
+            {
+              "name": "RoomSelectText"
             }
           ]
         }
@@ -1217,22 +1357,6 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "k_puddle",
-          "persistentUuid": "966b4e29-4d07-4439-848a-a731ac040c11",
-          "width": 0,
-          "x": 450,
-          "y": 554,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 1,
           "height": 726,
@@ -1279,7 +1403,14 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Correct",
+              "persistentUuid": "8950c0eb-4ad3-4d87-a804-acf155836449",
+              "type": "number",
+              "value": 2
+            }
+          ]
         },
         {
           "angle": 0,
@@ -1314,7 +1445,14 @@
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "HazardId",
+              "persistentUuid": "6638947d-c456-4a05-808d-c69e5fdc1515",
+              "type": "string",
+              "value": "k_cord"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -1341,8 +1479,8 @@
           "name": "InfoText",
           "persistentUuid": "3f3c1562-52ca-412c-a2f7-008f9d1e0b82",
           "width": 0,
-          "x": 170,
-          "y": 787,
+          "x": 127,
+          "y": 659,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -1375,7 +1513,7 @@
           "persistentUuid": "90b17550-8b08-4923-b648-82009bebe080",
           "width": 119,
           "x": 560,
-          "y": 220,
+          "y": 235,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1383,14 +1521,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 1,
+          "height": 100,
           "layer": "",
           "name": "QuizPrompt",
           "persistentUuid": "7097181f-230a-41ff-84ca-0fe2b3b853ed",
-          "width": 0,
-          "x": 505,
+          "width": 520,
+          "x": 366,
           "y": 262,
           "zOrder": 12,
           "numberProperties": [],
@@ -1401,21 +1539,106 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 87,
+          "height": 35,
+          "layer": "",
+          "name": "ChoiceText1",
+          "persistentUuid": "3d8cd036-65c5-473a-8de6-81b9d544d768",
+          "width": 484,
+          "x": 383,
+          "y": 369,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 24,
           "keepRatio": true,
           "layer": "",
+          "name": "ChoiceText2",
+          "persistentUuid": "afb418d7-cc5b-45ec-894a-fb8daf1db49b",
+          "width": 485,
+          "x": 382,
+          "y": 428,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 110,
+          "layer": "",
+          "name": "FeedbackTitle",
+          "persistentUuid": "fec52498-6b90-41ec-a874-40fa8acadd53",
+          "width": 460,
+          "x": 399,
+          "y": 237,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 43,
+          "layer": "",
+          "name": "ContinueText",
+          "persistentUuid": "9eefd46f-ac17-4715-bafa-e0323feef452",
+          "width": 105,
+          "x": 575,
+          "y": 413,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64.2570281124,
+          "height": 50,
+          "layer": "",
           "name": "ChoiceButton1",
-          "persistentUuid": "be82429d-7721-4e46-a3f6-cf3a8103fc5a",
-          "width": 169,
-          "x": 531,
-          "y": 275,
-          "zOrder": 13,
+          "persistentUuid": "fffdf029-09ba-4e8a-8baf-5908b20788f8",
+          "width": 500,
+          "x": 375,
+          "y": 410,
+          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Pick",
-              "persistentUuid": "ff7594bc-e581-4167-9301-4633d8b46c03",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64.2570281124,
+          "height": 50,
+          "layer": "",
+          "name": "ChoiceButton1",
+          "persistentUuid": "baf7e603-bfbf-49be-a8fb-af40a05c528c",
+          "width": 500,
+          "x": 375,
+          "y": 350,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Pick",
               "type": "number",
               "value": 1
             }
@@ -1424,39 +1647,30 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 87,
-          "keepRatio": true,
+          "depth": 64,
+          "height": 50,
           "layer": "",
-          "name": "ChoiceButton1",
-          "persistentUuid": "526ba9ec-a71e-4528-bdce-037f81dda068",
-          "width": 169,
-          "x": 530,
-          "y": 365,
-          "zOrder": 13,
+          "name": "ContinueButton",
+          "persistentUuid": "99a2cf17-a2ac-472a-9407-877f84b0523d",
+          "width": 500,
+          "x": 378,
+          "y": 409,
+          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Pick",
-              "persistentUuid": "ff7594bc-e581-4167-9301-4633d8b46c03",
-              "type": "number",
-              "value": 2
-            }
-          ]
+          "initialVariables": []
         },
         {
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
-          "name": "ChoiceText1",
-          "persistentUuid": "3d8cd036-65c5-473a-8de6-81b9d544d768",
+          "name": "WinPanel",
+          "persistentUuid": "3239291a-f5b4-42f3-bee6-c435bfc74e89",
           "width": 0,
-          "x": 600,
-          "y": 330,
-          "zOrder": 14,
+          "x": 620,
+          "y": 344,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1467,12 +1681,28 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "ChoiceText2",
-          "persistentUuid": "afb418d7-cc5b-45ec-894a-fb8daf1db49b",
+          "name": "WinText",
+          "persistentUuid": "d4984111-5030-400f-ad63-f72925d2c7da",
           "width": 0,
-          "x": 600,
-          "y": 420,
-          "zOrder": 15,
+          "x": 395,
+          "y": 261,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 64,
+          "height": 50,
+          "layer": "",
+          "name": "RoomSelectButton",
+          "persistentUuid": "0123a1b5-cde4-44a5-b323-b7ba7b7f8ace",
+          "width": 314,
+          "x": 474,
+          "y": 343,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1483,28 +1713,28 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "FeedbackTitle",
-          "persistentUuid": "fec52498-6b90-41ec-a874-40fa8acadd53",
+          "name": "RoomSelectText",
+          "persistentUuid": "1494d4ca-908a-45d1-9e37-0dfe13abe161",
           "width": 0,
-          "x": 550,
-          "y": 220,
-          "zOrder": 20,
+          "x": 510,
+          "y": 362,
+          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 125,
           "layer": "",
           "name": "FeedbackText",
-          "persistentUuid": "16741c6c-b240-45b9-9127-db829b1aa79e",
-          "width": 0,
-          "x": 590,
-          "y": 256,
-          "zOrder": 20,
+          "persistentUuid": "734a9f64-731a-4901-805e-e74b662c43e4",
+          "width": 500,
+          "x": 377,
+          "y": 340,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1582,17 +1812,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Untitled design (1).png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "MarkerPos",
+                          "x": 184,
+                          "y": 62.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 188.5,
+                        "y": 61.5
                       },
                       "customCollisionMask": [
                         [
@@ -1706,7 +1942,7 @@
               "name": "Choice1",
               "persistentUuid": "a4154523-5dc3-4488-8553-5367a57076dc",
               "type": "string",
-              "value": "Unplug it and put it away yourself."
+              "value": "Leave it alone."
             },
             {
               "name": "HazardId",
@@ -1753,14 +1989,20 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Untitled design (3).png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "MarkerPos",
+                          "x": 694,
+                          "y": 55
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
                         "y": 0
@@ -1864,7 +2106,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Untitled design (4)",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "MarkerPos",
+                          "x": 386.5,
+                          "y": 312
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -1975,7 +2223,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Untitled design (5)",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "MarkerPos",
+                          "x": 249.5,
+                          "y": 155.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -2016,7 +2270,7 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "CounterText",
           "persistentUuid": "0130075a-8214-450d-93f2-0594f36673c4",
@@ -2036,8 +2290,8 @@
             "r": 0
           },
           "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
+            "bold": true,
+            "isOutlineEnabled": true,
             "isShadowEnabled": false,
             "italic": false,
             "outlineColor": "255;255;255",
@@ -2111,7 +2365,12 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -2174,10 +2433,15 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Quiz Time!",
           "font": "assets/CaveatBrush-Regular2.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 30,
           "color": {
             "b": 0,
@@ -2200,8 +2464,8 @@
             "underlined": false,
             "text": "Quiz Time!",
             "font": "assets/CaveatBrush-Regular2.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
@@ -2218,10 +2482,15 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "What is the safest move?",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 0,
@@ -2244,81 +2513,12 @@
             "underlined": false,
             "text": "What is the safest move?",
             "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 20,
             "lineHeight": 0,
             "color": "0;0;0"
           }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "ChoiceButton1",
-          "persistentUuid": "e0d412ec-7889-42cc-8c88-cb03365e0250",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Pick",
-              "persistentUuid": "ff7594bc-e581-4167-9301-4633d8b46c03",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "button",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "button",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 23,
-                            "y": 67
-                          },
-                          {
-                            "x": 567,
-                            "y": 67
-                          },
-                          {
-                            "x": 567,
-                            "y": 254
-                          },
-                          {
-                            "x": 23,
-                            "y": 254
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "assetStoreId": "",
@@ -2331,7 +2531,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Text",
           "font": "assets/CaveatBrush-Regular2.ttf",
           "textAlignment": "center",
@@ -2375,7 +2580,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Text",
           "font": "assets/CaveatBrush-Regular2.ttf",
           "textAlignment": "center",
@@ -2518,9 +2728,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Great Choice!",
+          "string": "",
           "font": "assets/CaveatBrush-Regular2.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 30,
           "color": {
             "b": 0,
@@ -2541,10 +2751,10 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Great Choice!",
+            "text": "",
             "font": "assets/CaveatBrush-Regular2.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
@@ -2561,10 +2771,15 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Text",
           "font": "assets/CaveatBrush-Regular2.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 30,
           "color": {
             "b": 0,
@@ -2587,74 +2802,12 @@
             "underlined": false,
             "text": "Text",
             "font": "assets/CaveatBrush-Regular2.ttf",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
             "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
           }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "ContinueButton",
-          "persistentUuid": "a63162f3-31ce-4a6d-88bd-242ff96e584b",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "button2",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "button2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 29,
-                            "y": 80
-                          },
-                          {
-                            "x": 573,
-                            "y": 80
-                          },
-                          {
-                            "x": 573,
-                            "y": 267
-                          },
-                          {
-                            "x": 29,
-                            "y": 267
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "assetStoreId": "",
@@ -2671,7 +2824,7 @@
           "string": "Continue",
           "font": "assets/CaveatBrush-Regular2.ttf",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -2695,7 +2848,311 @@
             "font": "assets/CaveatBrush-Regular2.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 30,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+          "name": "ChoiceButton1",
+          "persistentUuid": "fe119f89-8ee8-4596-9767-bdacf9ed8fb0",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Blue Button",
+          "variables": [
+            {
+              "name": "Pick",
+              "persistentUuid": "a7d94221-8db1-4beb-aea0-4b95abdeaba9",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": ""
+          }
+        },
+        {
+          "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+          "name": "ContinueButton",
+          "persistentUuid": "5515683c-ceff-42ae-9396-2fe0cac490f5",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Blue Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": ""
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FoundMarker",
+          "persistentUuid": "591bd3ee-b6cc-4c13-a276-7e23636c9297",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Code_Generated_Image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17,
+                            "y": 18
+                          },
+                          {
+                            "x": 728,
+                            "y": 18
+                          },
+                          {
+                            "x": 728,
+                            "y": 780
+                          },
+                          {
+                            "x": 17,
+                            "y": 780
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "WinPanel",
+          "persistentUuid": "5a6bc856-c744-4ae9-96ab-2759d20b7aac",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Untitled design (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 272.5,
+                        "y": 129.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 544,
+                            "y": 0
+                          },
+                          {
+                            "x": 544,
+                            "y": 259
+                          },
+                          {
+                            "x": 1,
+                            "y": 259
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "WinText",
+          "persistentUuid": "c7c69f14-d572-40e1-9b2e-afd5b47c0730",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Congratulations! You found all the hazards!",
+          "font": "assets/CaveatBrush-Regular2.ttf",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Congratulations! You found all the hazards!",
+            "font": "assets/CaveatBrush-Regular2.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 30,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+          "name": "RoomSelectButton",
+          "persistentUuid": "3bd33e96-cf1c-4b9a-8300-7e51cf9818da",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Blue Button",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25,
+            "LabelText": ""
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "RoomSelectText",
+          "persistentUuid": "5a542d6f-f349-4684-8f65-88560d8de431",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Back to Room Selection",
+          "font": "assets/CaveatBrush-Regular2.ttf",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Back to Room Selection",
+            "font": "assets/CaveatBrush-Regular2.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 30,
             "lineHeight": 0,
             "color": "0;0;0"
           }
@@ -2704,6 +3161,23 @@
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "Win",
+            "children": [
+              {
+                "objectName": "WinPanel"
+              },
+              {
+                "objectName": "WinText"
+              },
+              {
+                "objectName": "RoomSelectButton"
+              },
+              {
+                "objectName": "RoomSelectText"
+              }
+            ]
+          },
           {
             "folderName": "Hazards",
             "children": [
@@ -2782,86 +3256,13 @@
           },
           {
             "objectName": "InfoText"
+          },
+          {
+            "objectName": "FoundMarker"
           }
         ]
       },
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "k_puddle",
-                "Clicked",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "k_puddle",
-                "Clicked",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "k_iron",
-                "Clicked",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "k_iron",
-                "Clicked",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2920,6 +3321,14 @@
                 "value": "Hide"
               },
               "parameters": [
+                "WinUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
                 "QuizFrame"
               ]
             },
@@ -2944,7 +3353,23 @@
                 "value": "Hide"
               },
               "parameters": [
+                "ContinueText"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
                 "ResultUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "InfoText"
               ]
             },
             {
@@ -2965,6 +3390,127 @@
                 "Text",
                 "=",
                 "\"Hazards found: \" + ToString(FoundCount) + \" of \" + ToString(TotalHazards)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetX"
+              },
+              "parameters": [
+                "QuizPanel",
+                "Scale",
+                "=",
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetY"
+              },
+              "parameters": [
+                "QuizPanel",
+                "Scale",
+                "=",
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "WinPanel",
+                "Scale",
+                "=",
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceButton1",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizTitle",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizPrompt",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceText1",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceText2",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "WinText",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "RoomSelectButton",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "RoomSelectText",
+                "Opacity",
+                "=",
+                "0"
               ]
             }
           ]
@@ -3166,6 +3712,106 @@
                 "QuizTitle",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "ActiveExplain",
+                "=",
+                "KitchenHazards.Explain"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "QuizPanel",
+                "Tween",
+                "\"Popup\"",
+                "1",
+                "\"easeOutBack\"",
+                "0.25",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "QuizTitle",
+                "Tween",
+                "Opacity",
+                "\"FadeQuizTitle\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "QuizPrompt",
+                "Tween",
+                "Opacity",
+                "\"FadePrompt\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "ChoiceText1",
+                "Tween",
+                "Opacity",
+                "\"FadeC1\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "ChoiceText2",
+                "Tween",
+                "Opacity",
+                "\"FadeC2\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "ChoiceButton1",
+                "Tween",
+                "Opacity",
+                "\"FadeButton1\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
             }
           ]
         },
@@ -3232,6 +3878,15 @@
               "parameters": [
                 "",
                 "\"ClickDelay\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PickAllInstances"
+              },
+              "parameters": [
+                "",
+                "ChoiceButton1"
               ]
             }
           ],
@@ -3367,6 +4022,80 @@
                   "parameters": [
                     "QuizPrompt"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "KitchenHazards",
+                    "Found",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "FoundMarker",
+                    "KitchenHazards.PointX(\"MarkerPos\")",
+                    "KitchenHazards.PointY(\"MarkerPos\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "FoundMarker",
+                    "=",
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FoundMarker",
+                    "Scale",
+                    "=",
+                    "0.01"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                  },
+                  "parameters": [
+                    "FoundMarker",
+                    "Tween",
+                    "\"MarkerPop\"",
+                    "0.22",
+                    "\"easeOutBack\"",
+                    "0.3",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "FeedbackText",
+                    "Tween",
+                    "Opacity",
+                    "\"FeedbackTxt\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "0.25",
+                    ""
+                  ]
                 }
               ]
             },
@@ -3458,6 +4187,21 @@
                   "parameters": [
                     "QuizPrompt"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "FeedbackText",
+                    "Tween",
+                    "Opacity",
+                    "\"FeedbackTxt\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "0.25",
+                    ""
+                  ]
                 }
               ]
             }
@@ -3530,7 +4274,32 @@
                 "value": "Hide"
               },
               "parameters": [
+                "ChoiceUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "PickAllInstances"
+              },
+              "parameters": [
+                "",
                 "NextUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "NextUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "ContinueText"
               ]
             },
             {
@@ -3550,6 +4319,217 @@
               "parameters": [
                 "",
                 "\"ClickDelay\""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceButton1",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizTitle",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "QuizPrompt",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceText1",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "ChoiceText2",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "FoundCount",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Mode",
+                    "=",
+                    "\"win\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "WinUI",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                  },
+                  "parameters": [
+                    "WinPanel",
+                    "Tween",
+                    "\"WinPop\"",
+                    "1",
+                    "\"easeOutBack\"",
+                    "0.25",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "WinText",
+                    "Tween",
+                    "Opacity",
+                    "\"FadeWinTxt\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "0.25",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "RoomSelectButton",
+                    "Tween",
+                    "Opacity",
+                    "\"FadeWinBtn\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "0.25",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "RoomSelectText",
+                    "Tween",
+                    "Opacity",
+                    "\"FadeWinBtnTxt\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "0.25",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "WinUI",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Mode",
+                "=",
+                "\"win\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"ClickDelay\"",
+                ">",
+                "0.3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"RoomSelection\"",
+                ""
               ]
             }
           ]
@@ -3650,6 +4630,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
@@ -29645,6 +30629,343 @@
                 }
               ],
               "editionSettings": []
+            },
+            {
+              "areaMaxX": 256,
+              "areaMaxY": 106,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "assetStoreAssetId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+              "assetStoreOriginalName": "Blue Button",
+              "name": "Blue Button",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": false,
+                  "italic": false,
+                  "name": "Label",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "TextStyleState",
+                      "type": "PanelSpriteButton::TextStyleState",
+                      "ShouldEnableOutlineOnHover": false,
+                      "HoverColor": "",
+                      "ShouldEnableShadowOnHover": false,
+                      "HoverFontSize": 0,
+                      "IsHovered": false,
+                      "IdleFontSize": 0,
+                      "IdleColor": ""
+                    }
+                  ],
+                  "string": "Button",
+                  "font": "",
+                  "textAlignment": "center",
+                  "characterSize": 60,
+                  "color": {
+                    "b": 99,
+                    "g": 69,
+                    "r": 28
+                  },
+                  "content": {
+                    "bold": false,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "Button",
+                    "font": "",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 60,
+                    "lineHeight": 0,
+                    "color": "28;69;99"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 32,
+                  "height": 106,
+                  "leftMargin": 16,
+                  "name": "Idle",
+                  "rightMargin": 16,
+                  "texture": "Blue Button_Idle.png",
+                  "tiled": false,
+                  "topMargin": 16,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 256,
+                  "variables": [
+                    {
+                      "folded": true,
+                      "name": "State",
+                      "type": "string",
+                      "value": "Idle"
+                    }
+                  ],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ButtonFSM",
+                      "type": "PanelSpriteButton::ButtonFSM",
+                      "serializedBehavior": {
+                        "name": "ButtonFSM",
+                        "type": "PanelSpriteButton::ButtonFSM",
+                        "ShouldCheckHovering": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 32,
+                  "height": 106,
+                  "leftMargin": 16,
+                  "name": "Hovered",
+                  "rightMargin": 16,
+                  "texture": "Blue Button_Hovered.png",
+                  "tiled": false,
+                  "topMargin": 16,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 256,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior",
+                      "serializedBehavior": {
+                        "name": "Tween",
+                        "type": "Tween::TweenBehavior"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 16,
+                  "height": 106,
+                  "leftMargin": 16,
+                  "name": "Pressed",
+                  "rightMargin": 16,
+                  "texture": "Blue Button_Pressed.png",
+                  "tiled": false,
+                  "topMargin": 32,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 256,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "name": "BitmapLabel",
+                  "type": "BitmapText::BitmapTextObject",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "BitmapTextStyleState",
+                      "type": "PanelSpriteButton::BitmapTextStyleState",
+                      "HoverColor": "",
+                      "HoverPrefix": "",
+                      "HoverSuffix": "",
+                      "IsHovered": false,
+                      "IdleText": "",
+                      "IdleColor": ""
+                    }
+                  ],
+                  "content": {
+                    "text": "Text",
+                    "opacity": 255,
+                    "scale": 1,
+                    "fontSize": 20,
+                    "tint": "255;255;255",
+                    "bitmapFontResourceName": "",
+                    "textureAtlasResourceName": "",
+                    "align": "center",
+                    "verticalTextAlignment": "center"
+                  }
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Label"
+                  },
+                  {
+                    "objectName": "Idle"
+                  },
+                  {
+                    "objectName": "Hovered"
+                  },
+                  {
+                    "objectName": "Pressed"
+                  },
+                  {
+                    "objectName": "BitmapLabel"
+                  }
+                ]
+              },
+              "objectsGroups": [
+                {
+                  "name": "Background",
+                  "objects": [
+                    {
+                      "name": "Idle"
+                    },
+                    {
+                      "name": "Hovered"
+                    },
+                    {
+                      "name": "Pressed"
+                    }
+                  ]
+                },
+                {
+                  "name": "Labels",
+                  "objects": [
+                    {
+                      "name": "Label"
+                    },
+                    {
+                      "name": "BitmapLabel"
+                    }
+                  ]
+                }
+              ],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera2DPlaneMaxDrawingDistance": 5000,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": false,
+                  "depth": 1,
+                  "height": 64,
+                  "layer": "",
+                  "name": "Idle",
+                  "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+                  "width": 64,
+                  "x": 0,
+                  "y": 0,
+                  "zOrder": 1,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 81,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "Label",
+                  "persistentUuid": "13c57e74-5889-490a-b3fe-4856e2ee6a18",
+                  "width": 240,
+                  "x": 8,
+                  "y": 48,
+                  "zOrder": 2,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {}
             }
           ]
         }
